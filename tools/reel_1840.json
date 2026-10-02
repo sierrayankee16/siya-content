@@ -1,0 +1,41 @@
+{
+ "out": "out/reel-1840",
+ "duration": 24,
+ "scenes": [
+  {
+   "start": 0,
+   "end": 3.6,
+   "html": "<div class='big t' style='font-size:280px' data-in='0' data-pop='1'>18:40</div><h1 style='font-size:110px' data-in='0.6'>Ein Kunde ruft an.</h1><div class='card' style='padding:44px 46px;' data-in='0.4'><div style='display:flex;align-items:center;gap:30px'><div class='ring' style='width:120px;height:120px;border-radius:50%;background:#30A46C;display:flex;align-items:center;justify-content:center;font-size:56px'>✆</div><div><div style='font-size:32px;color:#B7BCD6'>Eingehender Anruf</div><div style='font-size:50px;font-weight:700'>Neuer Kunde</div></div></div></div>"
+  },
+  {
+   "start": 3.6,
+   "end": 6.8,
+   "html": "<h1 style='font-size:130px' data-in='0'>Keiner geht ran.</h1><div class='card' style='padding:44px 46px;' data-in='0.4'><div style='display:flex;align-items:center;gap:30px'><div style='width:120px;height:120px;border-radius:50%;background:#2A2E45;display:flex;align-items:center;justify-content:center;font-size:56px;color:#8A8FA8'>✆</div><div><div style='font-size:32px;color:#B7BCD6'>Dein Betrieb</div><div style='font-size:50px;font-weight:700;color:#F87171'>Feierabend</div></div></div></div>"
+  },
+  {
+   "start": 6.8,
+   "end": 10.2,
+   "html": "<h1 style='font-size:120px' data-in='0'>Er ruft den Nächsten an.</h1><div class='card' style='padding:36px 44px' data-in='0.5'><div class='cross' style='font-size:46px'>Dein Betrieb</div></div><div class='card' style='padding:36px 44px;box-shadow:0 0 0 2px #59BFAC' data-in='1.1'><div class='tick' style='font-size:46px'>Nächster Betrieb</div></div>"
+  },
+  {
+   "start": 10.2,
+   "end": 13.4,
+   "html": "<h1 style='font-size:130px' data-in='0'>Der geht ran.</h1><div class='card' style='padding:44px 46px;box-shadow:0 0 0 2px #59BFAC' data-in='0.5' data-pop='1'><div style='font-size:32px;color:#59BFAC' class='mono'>Termin bestätigt</div><div style='font-size:60px;font-weight:700;margin-top:14px'>Donnerstag, 8:00 Uhr</div></div>"
+  },
+  {
+   "start": 13.4,
+   "end": 17.8,
+   "html": "<div class='mono label' data-in='0'>Nächster Morgen</div><h1 style='font-size:110px' data-in='0.2'>Bei dir:</h1><div class='card' style='padding:40px 44px;display:flex;align-items:center;gap:28px' data-in='0.8'><div style='width:100px;height:100px;border-radius:50%;background:rgba(229,72,77,.18);display:flex;align-items:center;justify-content:center;font-size:48px;color:#F87171'>✆</div><div style='flex:1'><div style='font-size:46px;font-weight:700'>Verpasster Anruf</div><div style='font-size:32px;color:#B7BCD6'>keine Nachricht</div></div><div class='mono' style='font-size:30px;letter-spacing:.1em;color:#B7BCD6'>18:40</div></div>"
+  },
+  {
+   "start": 17.8,
+   "end": 20.8,
+   "html": "<h1 style='font-size:130px' data-in='0'>Du erfährst nie,</h1><h1 class='t' style='font-size:130px' data-in='0.9'>dass es ihn gab.</h1>"
+  },
+  {
+   "start": 20.8,
+   "end": 24,
+   "html": "<h1 style='font-size:120px' data-in='0'>Was passiert bei dir um</h1><div class='big t' style='font-size:280px' data-in='0.6' data-pop='1'>18:40?</div>"
+  }
+ ]
+}
