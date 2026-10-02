@@ -37,6 +37,8 @@ THEMES = {
  "light":  {"bg": "#F6F7FA", "fg": "#0B0B1F", "sub": "#4A4D63", "acc": "#2E8F7E", "line": "rgba(11,11,31,.1)", "grid": "rgba(11,11,31,.045)", "card": "#FFFFFF", "logo": LOGO_DARKTEXT, "glow": False},
  "accent": {"bg": "#59BFAC", "fg": "#070718", "sub": "#0E2E2A", "acc": "#FFFFFF", "line": "rgba(7,7,24,.18)", "grid": "rgba(7,7,24,.06)", "card": "rgba(255,255,255,.9)", "logo": LOGO_DARKTEXT, "glow": False},
  "paper":  {"bg": "#EFEBE3", "fg": "#14141F", "sub": "#55535C", "acc": "#2E8F7E", "line": "rgba(20,20,31,.14)", "grid": None, "card": "#FBF9F5", "logo": LOGO_DARKTEXT, "glow": False},
+ "brand":  {"bg": "#04050D", "fg": "#FFFFFF", "sub": "#B7BCD6", "acc": "#22D3EE", "line": "rgba(120,170,255,.18)", "grid": None, "card": "rgba(16,24,58,.55)", "logo": LOGO_LIGHTTEXT, "glow": "brand"},
+ "brandlight": {"bg": "#F4F7FF", "fg": "#06081A", "sub": "#4A5070", "acc": "#1663F0", "line": "rgba(6,8,26,.1)", "grid": None, "card": "#FFFFFF", "logo": LOGO_DARKTEXT, "glow": "brandlight"},
  "ink":    {"bg": "#000000", "fg": "#FFFFFF", "sub": "#A9ABB8", "acc": "#59BFAC", "line": "rgba(255,255,255,.14)", "grid": None, "card": "#111114", "logo": LOGO_LIGHTTEXT, "glow": False},
 }
 
@@ -44,7 +46,14 @@ def css(t, w, h, story):
     pad_top = 250 if story else 92
     pad_bot = 300 if story else 0
     grid = f"background-image:linear-gradient({t['grid']} 1px,transparent 1px),linear-gradient(90deg,{t['grid']} 1px,transparent 1px);background-size:108px 108px;" if t["grid"] else ""
-    glow = ".s:after{content:'';position:absolute;width:900px;height:900px;right:-300px;bottom:-320px;background:radial-gradient(circle,rgba(89,191,172,.16),transparent 62%)}" if t["glow"] else ""
+    glow = ".s:after{content:'';position:absolute;width:900px;height:900px;right:-300px;bottom:-320px;background:radial-gradient(circle,rgba(89,191,172,.16),transparent 62%)}" if t["glow"] is True else ""
+    if t["glow"] == "brand":
+        glow = (".s:after{content:'';position:absolute;inset:0;background:radial-gradient(900px 700px at 105% -5%,rgba(22,99,240,.55),transparent 60%),radial-gradient(800px 600px at -10% 110%,rgba(34,211,238,.28),transparent 60%);z-index:0}"
+                ".t{background:linear-gradient(90deg,#22E6F0,#1663F0);-webkit-background-clip:text;background-clip:text;color:transparent!important}"
+                ".card{backdrop-filter:blur(8px);box-shadow:0 0 0 1px rgba(34,211,238,.25),0 20px 60px rgba(22,99,240,.25)}")
+    if t["glow"] == "brandlight":
+        glow = (".s:after{content:'';position:absolute;inset:0;background:radial-gradient(900px 600px at 110% 0%,rgba(22,99,240,.18),transparent 60%);z-index:0}"
+                ".t{background:linear-gradient(90deg,#06B6D4,#1663F0);-webkit-background-clip:text;background-clip:text;color:transparent!important}")
     return f"""
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:{w}px;height:{h}px}}
@@ -93,7 +102,7 @@ p b{{color:{t['fg']};font-weight:600}}
 .half h4{{font-family:'DejaVu Sans Mono',monospace;letter-spacing:.25em;font-size:20px;text-transform:uppercase;margin-bottom:22px;color:{t['sub']}}}
 .half.good h4{{color:{t['acc']}}}
 .half div{{font-size:36px;line-height:1.35;margin-bottom:14px}}
-.tick:before{{content:'✓  ';color:{t['acc']};font-weight:700}} .cross:before{{content:'✕  ';color:#D9534F;font-weight:700}}
+.tick:before{{content:'✓  ';color:#59BFAC;font-weight:700}} .cross:before{{content:'✕  ';color:#D9534F;font-weight:700}}
 .phone{{width:620px;margin:0 auto;border-radius:56px;border:12px solid #1B1B22;background:#F2F2F7;padding:34px 26px 40px;box-shadow:0 30px 70px rgba(0,0,0,.35)}}
 .phone .bar{{text-align:center;font-size:28px;font-weight:600;color:#111;padding-bottom:22px;border-bottom:1px solid #DDD;margin-bottom:22px}}
 .chat{{display:flex;flex-direction:column;gap:14px}}
