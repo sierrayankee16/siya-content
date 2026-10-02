@@ -1,0 +1,20 @@
+{
+ "out": "post1",
+ "theme": "dark",
+ "tag": "INSIDER",
+ "slides": [
+  "<div class='mono label'>Diese Woche</div><h1>Ein KI-Assistent hat <span class='t'>1&nbsp;Milliarde Dollar</span> eingesammelt.</h1><p>Was er macht, betrifft dich mehr als die Summe.</p>",
+
+  "<h2>Eine seiner Aufgaben:</h2><div class='card' style='display:flex;flex-direction:column;gap:26px'><div style='display:flex;justify-content:space-between;align-items:center'><span class='mono chip'>Auftrag vom Nutzer</span><span class='mono' style='font-size:17px;color:rgba(205,208,224,.55)'>Agent ruft an</span></div><div style='font-size:40px;font-weight:500;line-height:1.3'>Termin bei einem Betrieb besorgen, der keine Online-Buchung hat.</div><div class='wave'><i style='height:18px'></i><i style='height:34px'></i><i style='height:52px'></i><i style='height:28px'></i><i style='height:62px'></i><i style='height:40px'></i><i style='height:22px'></i><i style='height:48px'></i><i style='height:66px'></i><i style='height:30px'></i><i style='height:44px'></i><i style='height:20px'></i><i style='height:56px'></i><i style='height:36px'></i><i style='height:18px'></i></div></div><p>Für seinen Nutzer. Mit eigener Telefonnummer.</p>",
+
+  "<h2>Er ist nicht der Einzige.</h2><div><div class='row'><div class='num'>01</div><div class='rowt'>Google<span>ruft in den USA schon für Nutzer bei Geschäften an.</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>OpenAI<span>hat diese Woche Agenten vorgestellt, die dauerhaft Aufgaben erledigen.</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Meta<span>baut seinen Agenten Muse aus.</span></div></div></div>",
+
+  "<p>Noch passiert das vor allem in den USA. Für Deutschland ist nichts angekündigt.</p><h1>Der Kunde sucht nicht mehr selbst. <span class='t'>Er lässt suchen.</span></h1>",
+
+  "<h2>Dann zählt nicht, wie gut deine Website aussieht.<br><span class='t'>Sondern ob jemand rangeht.</span></h2><div class='card' style='display:flex;align-items:center;gap:28px;padding:30px 34px'><div style='width:78px;height:78px;border-radius:50%;background:rgba(235,87,87,.15);display:flex;align-items:center;justify-content:center;font-size:38px;color:#EB5757'>✆</div><div style='flex:1'><div style='font-size:34px;font-weight:600'>Verpasster Anruf</div><div style='font-size:28px;color:#CDD0E0;margin-top:4px'>Mobil · keine Nachricht hinterlassen</div></div><div class='mono' style='font-size:24px;letter-spacing:.1em;color:#CDD0E0'>18:40</div></div>",
+
+  "<div class='mono label'>Der Check</div><h2 style='font-size:68px'>Vier Fragen an deinen Betrieb.</h2><div><div class='row' style='padding:24px 0'><div class='num'>01</div><div class='rowt' style='font-size:35px'>Wie viele Anrufe verpasst ihr pro Woche? Kennst du die Zahl?</div></div><div class='row' style='padding:24px 0'><div class='num'>02</div><div class='rowt' style='font-size:35px'>Was passiert mit einem Anruf um 18:40 Uhr?</div></div><div class='row' style='padding:24px 0'><div class='num'>03</div><div class='rowt' style='font-size:35px'>Kann am Telefon sofort jemand sagen, wann ihr Zeit habt und was es ungefähr kostet?</div></div><div class='row' style='padding:24px 0'><div class='num'>04</div><div class='rowt' style='font-size:35px'>Kann man bei dir online einen Termin buchen?</div></div></div>",
+
+  "<h1 style='font-size:84px'>Zweimal „Nein“ oder „Weiß ich nicht“?</h1><p style='font-size:42px'>Dann weißt du, wo du anfangen solltest.</p><div style='display:flex;align-items:center;gap:18px;margin-top:10px'><span class='mono chipfill'>Speichern</span><span style='font-size:32px;color:#CDD0E0'>und an den schicken, der bei euch das Telefon verantwortet.</span></div>"
+ ]
+}
