@@ -89,10 +89,10 @@ p b{{color:{t['fg']};font-weight:600}}
 .quote:before{{content:'„';color:{t['acc']};display:block;font-size:160px;line-height:.6;margin-bottom:10px}}
 .stamp{{display:inline-block;border:4px solid {t['acc']};color:{t['acc']};padding:10px 22px;border-radius:10px;transform:rotate(-4deg);font-family:'DejaVu Sans Mono',monospace;font-size:30px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}}
 .note{{background:#FFF6B8;color:#2A2A20;padding:40px 44px;border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.18);transform:rotate(-1.5deg);font-size:38px;line-height:1.4}}
-.split{{display:flex;gap:24px}} .half{{flex:1;border-radius:22px;padding:34px;border:1px solid {t['line']};background:{t['card']}}}
+.split{{display:flex;gap:24px}} .half{{flex:1;border-radius:22px;padding:36px 30px;border:1px solid {t['line']};background:{t['card']}}}
 .half h4{{font-family:'DejaVu Sans Mono',monospace;letter-spacing:.25em;font-size:20px;text-transform:uppercase;margin-bottom:22px;color:{t['sub']}}}
 .half.good h4{{color:{t['acc']}}}
-.half div{{font-size:31px;line-height:1.35;margin-bottom:14px}}
+.half div{{font-size:36px;line-height:1.35;margin-bottom:14px}}
 .tick:before{{content:'✓  ';color:{t['acc']};font-weight:700}} .cross:before{{content:'✕  ';color:#D9534F;font-weight:700}}
 .phone{{width:620px;margin:0 auto;border-radius:56px;border:12px solid #1B1B22;background:#F2F2F7;padding:34px 26px 40px;box-shadow:0 30px 70px rgba(0,0,0,.35)}}
 .phone .bar{{text-align:center;font-size:28px;font-weight:600;color:#111;padding-bottom:22px;border-bottom:1px solid #DDD;margin-bottom:22px}}
