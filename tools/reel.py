@@ -8,6 +8,7 @@ Spec:
   "duration": 26.0,
   "scenes": [ {"start": 0, "end": 4.5, "html": "..."} ]
 }
+Sichere Zone (Instagram-UI): Inhalt liegt zwischen 300 px oben, 600 px unten, 90 px links, 170 px rechts (Buttons).
 Elemente in einer Szene mit data-in="Sekunden ab Szenenstart" blenden weich ein (von unten).
 data-pop="1" skaliert stattdessen auf. data-count="1000" zaehlt eine Zahl hoch (data-suffix, data-prefix).
 Klasse .ring laesst ein Element pulsieren (eingehender Anruf).
@@ -52,10 +53,11 @@ window.setT = function(t){
 def build_html(spec):
     t = THEMES["brand"]
     style = css(t, 1080, 1920, True) + """
-.scene{position:absolute;left:84px;right:84px;top:300px;bottom:360px;display:flex;flex-direction:column;justify-content:center;gap:48px;opacity:0}
-.cap{position:absolute;left:0;right:0;bottom:170px;text-align:center;z-index:3}
+.scene{position:absolute;left:90px;right:170px;top:300px;bottom:600px;display:flex;flex-direction:column;justify-content:center;opacity:0}
+.scene>.inner{zoom:.8;display:flex;flex-direction:column;gap:48px}
+.cap{display:none}
 """
-    scenes = "".join(f"<div class='scene' data-start='{s['start']}' data-end='{s['end']}'>{s['html']}</div>" for s in spec["scenes"])
+    scenes = "".join(f"<div class='scene' data-start='{s['start']}' data-end='{s['end']}'><div class='inner'>{s['html']}</div></div>" for s in spec["scenes"])
     return f"""<!doctype html><html><head><meta charset=utf-8><style>{style}</style></head><body>
 <div class='s'><div class='top'><img class='logo' src='{t['logo']}' style='height:52px'></div>{scenes}
 <div class='cap mono' style='font-size:22px;color:#B7BCD6;opacity:.7'>SIYA MEDIA · AI &amp; MARKETING</div></div>

@@ -58,7 +58,7 @@ def css(t, w, h, story):
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:{w}px;height:{h}px}}
 body{{font-family:'Inter Display','Inter',sans-serif;-webkit-font-smoothing:antialiased}}
-.s{{position:relative;width:{w}px;height:{h}px;overflow:hidden;padding:{pad_top}px 84px {pad_bot}px;display:flex;flex-direction:column;background:{t['bg']};color:{t['fg']}}}
+.s{{position:relative;width:{w}px;height:{h}px;overflow:hidden;padding:{pad_top}px 100px {pad_bot}px;display:flex;flex-direction:column;background:{t['bg']};color:{t['fg']}}}
 .s:before{{content:'';position:absolute;inset:0;{grid}}}
 {glow}
 .s>*{{position:relative;z-index:2}}
