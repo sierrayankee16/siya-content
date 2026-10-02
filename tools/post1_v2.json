@@ -1,0 +1,32 @@
+{
+ "out": "out/kw40-1",
+ "size": "post",
+ "theme": "ink",
+ "tag": "",
+ "slides": [
+  {
+   "align": "bottom",
+   "html": "<div class='mono label'>Diese Woche</div><div class='big t' style='font-size:128px'>1.000.000.000&nbsp;$</div><h3>So viel haben Investoren gerade auf einen KI-Assistenten gesetzt.<br><span style='color:#A9ABB8'>Die spannende Frage ist: warum?</span></h3>"
+  },
+  {
+   "html": "<h2>Der Assistent heißt Instinct. Er macht nichts Spektakuläres.</h2><div><div class='row'><div class='num'>01</div><div class='rowt'>Bucht Reisen und Restaurants</div></div><div class='row'><div class='num'>02</div><div class='rowt'>Kauft ein, kündigt Abos</div></div><div class='row'><div class='num'>03</div><div class='rowt'><b class='t'>Ruft Betriebe an,</b> bei denen man nicht online buchen kann. Mit eigener Telefonnummer.</div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>So kann das aussehen · Beispiel</div><div class='phone' style='width:760px'><div class='bar'>Assistent</div><div class='chat'><div class='bout'>Heizung tropft. Such mir bitte diese Woche einen Termin.</div><div class='bin'>Online konnte ich bei keinem Betrieb buchen. Ich rufe jetzt drei an und melde mich.</div><div class='meta'>12 Minuten später</div><div class='bin'>Termin Donnerstag 8 Uhr. Zwei Betriebe waren nicht erreichbar.</div></div></div>"
+  },
+  {
+   "theme": "accent",
+   "html": "<div class='mono label'>Unsere Einordnung</div><h2>Warum eine Milliarde dafür?</h2><h1 style='font-size:92px'>Weil Kunden bald nicht mehr selbst suchen. <span style='color:#fff'>Sie lassen suchen.</span></h1>"
+  },
+  {
+   "html": "<h2>Und die Investoren wetten nicht allein.</h2><div><div class='row'><div class='num'>01</div><div class='rowt'>Google<span>ruft in den USA schon für Nutzer bei Geschäften an.</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>OpenAI<span>hat diese Woche Agenten vorgestellt, die dauerhaft Aufgaben erledigen.</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Meta<span>baut seinen Agenten Muse aus.</span></div></div></div><p>Noch passiert das vor allem in den USA. Für Deutschland ist nichts angekündigt.</p>"
+  },
+  {
+   "theme": "paper",
+   "html": "<div class='mono label'>Der Check · zum Speichern</div><h2 style='font-size:66px'>Was hört der Assistent, wenn er bei dir anruft?</h2><div><div class='row' style='padding:22px 0'><div class='num'>01</div><div class='rowt' style='font-size:34px'>Wie viele Anrufe verpasst ihr pro Woche? Kennst du die Zahl?</div></div><div class='row' style='padding:22px 0'><div class='num'>02</div><div class='rowt' style='font-size:34px'>Was passiert mit einem Anruf um 18:40 Uhr?</div></div><div class='row' style='padding:22px 0'><div class='num'>03</div><div class='rowt' style='font-size:34px'>Kann sofort jemand sagen, wann ihr Zeit habt und was es ungefähr kostet?</div></div><div class='row' style='padding:22px 0'><div class='num'>04</div><div class='rowt' style='font-size:34px'>Kann man bei dir online einen Termin buchen?</div></div></div>"
+  },
+  {
+   "html": "<div class='big t' style='font-size:110px'>1.000.000.000&nbsp;$</div><h2>sind eine Wette darauf, dass Erreichbarkeit zur Pflicht wird.</h2><p>Bei wie vielen Fragen im Check hast du ehrlich „Ja“ gesagt?</p><div style='display:flex;align-items:center;gap:18px'><span class='mono chipfill'>Speichern</span><span style='font-size:30px;color:#A9ABB8'>und an den schicken, der bei euch fürs Telefon zuständig ist.</span></div>"
+  }
+ ]
+}
