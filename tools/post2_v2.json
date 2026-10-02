@@ -1,31 +1,28 @@
 {
  "out": "out/kw40-2",
  "size": "post",
- "theme": "ink",
+ "theme": "brand",
  "tag": "",
  "slides": [
   {
-   "theme": "accent",
-   "align": "center",
-   "html": "<div class='big' style='font-size:440px;color:#070718'>0&nbsp;%</div><h2 style='color:#070718'>der Firmen sagen: Wir nutzen KI voll aus.</h2>"
+   "html": "<div class='big t' style='font-size:470px'>0&nbsp;%</div><h2 style='font-size:72px'>der Firmen sagen:<br>„Wir nutzen KI voll aus.“</h2>"
   },
   {
-   "theme": "paper",
-   "html": "<h2>Dabei nutzen sie <span class='t'>57&nbsp;%.</span></h2><div style='display:flex;flex-direction:column;gap:30px'><div style='display:flex;align-items:center;gap:22px'><span class='mono' style='font-size:22px;width:90px'>2024</span><div style='height:70px;width:20%;background:#CFCAC0;border-radius:10px'></div><b style='font-size:40px'>20&nbsp;%</b></div><div style='display:flex;align-items:center;gap:22px'><span class='mono' style='font-size:22px;width:90px'>2025</span><div style='height:70px;width:36%;background:#A9A49A;border-radius:10px'></div><b style='font-size:40px'>36&nbsp;%</b></div><div style='display:flex;align-items:center;gap:22px'><span class='mono' style='font-size:22px;width:90px;color:#2E8F7E'>2026</span><div style='height:70px;width:57%;background:#59BFAC;border-radius:10px'></div><b style='font-size:40px'>57&nbsp;%</b></div></div>"
+   "theme": "brandlight",
+   "html": "<h2>Dabei nutzen sie <span class='t'>57&nbsp;%.</span></h2><div style='display:flex;flex-direction:column;gap:30px'><div style='display:flex;align-items:center;gap:22px'><span class='mono' style='font-size:22px;width:90px'>2024</span><div style='height:70px;width:20%;background:#C9D3EC;border-radius:10px'></div><b style='font-size:40px'>20&nbsp;%</b></div><div style='display:flex;align-items:center;gap:22px'><span class='mono' style='font-size:22px;width:90px'>2025</span><div style='height:70px;width:36%;background:#8FA6DA;border-radius:10px'></div><b style='font-size:40px'>36&nbsp;%</b></div><div style='display:flex;align-items:center;gap:22px'><span class='mono' style='font-size:22px;width:90px;color:#1663F0'>2026</span><div style='height:70px;width:57%;background:linear-gradient(90deg,#06B6D4,#1663F0);border-radius:10px'></div><b style='font-size:40px'>57&nbsp;%</b></div></div>"
   },
   {
    "html": "<div class='big t' style='font-size:330px'>59&nbsp;%</div><h2>sagen: Wir nutzen das Potenzial <u>gar nicht</u>.</h2>"
   },
   {
-   "theme": "light",
-   "html": "<h2>Woran liegt das?</h2><div class='split'><div class='half'><h4>Tool gekauft</h4><div class='cross'>Mail kommt rein</div><div class='cross'>Jemand tippt ab</div><div class='cross'>Rückruf irgendwann</div></div><div class='half good'><h4>Ablauf geändert</h4><div class='tick'>Anfrage wird erfasst</div><div class='tick'>Landet im CRM</div><div class='tick'>Team wird informiert</div></div></div>"
+   "html": "<h2>Woran liegt das?</h2><div class='split'><div class='half'><h4 style='color:#F87171'>Tool gekauft</h4><div class='cross'>Mail kommt rein</div><div class='cross'>Jemand tippt ab</div><div class='cross'>Rückruf irgendwann</div></div><div class='half' style='box-shadow:0 0 0 2px #59BFAC'><h4 style='color:#59BFAC'>Ablauf geändert</h4><div class='tick'>Anfrage wird erfasst</div><div class='tick'>Landet im CRM</div><div class='tick'>Team wird informiert</div></div></div>"
   },
   {
-   "theme": "paper",
+   "theme": "brandlight",
    "html": "<div class='mono label'>Check · speichern</div><h2>Wo steckt KI bei dir?</h2><div><div class='row'><div class='num'>01</div><div class='rowt'>Wird bei euch etwas abgetippt?</div></div><div class='row'><div class='num'>02</div><div class='rowt'>Wartet ein Kunde, weil keiner Zeit hat?</div></div><div class='row'><div class='num'>03</div><div class='rowt'>Nutzt ihr KI nur für Texte?</div></div></div>"
   },
   {
-   "html": "<div style='display:flex;align-items:center;gap:40px'><div class='big' style='font-size:200px;color:#55555C'>0&nbsp;%</div><div style='font-size:120px;color:#59BFAC'>→</div><div class='big t' style='font-size:200px'>?</div></div><h2>Raus kommst du mit einem geänderten Ablauf. Nicht mit noch einem Tool.</h2><div class='src'>Quelle: Bitkom-Umfrage, 603 Unternehmen ab 20 Mitarbeitern, 14.09.2026</div>"
+   "html": "<div style='display:flex;align-items:center;gap:40px'><div class='big' style='font-size:200px;color:#3A3F5C'>0&nbsp;%</div><div style='font-size:120px;color:#59BFAC'>→</div><div class='big t' style='font-size:200px'>?</div></div><h2>Raus kommst du mit einem neuen Ablauf. Nicht mit noch einem Tool.</h2><div class='src'>Quelle: Bitkom-Umfrage, 603 Unternehmen ab 20 Mitarbeitern, 14.09.2026</div>"
   }
  ]
 }

@@ -108,7 +108,7 @@ p b{{color:{t['fg']};font-weight:600}}
 .chat{{display:flex;flex-direction:column;gap:14px}}
 .bin,.bout{{max-width:84%;padding:20px 26px;border-radius:26px;font-size:33px;line-height:1.32}}
 .bin{{background:#FFFFFF;color:#111;align-self:flex-start;border-bottom-left-radius:6px}}
-.bout{{background:#59BFAC;color:#06201C;align-self:flex-end;border-bottom-right-radius:6px}}
+.bout{{background:#1663F0;color:#FFFFFF;align-self:flex-end;border-bottom-right-radius:6px}}
 .meta{{font-size:22px;color:#8A8A93;text-align:center}}
 """
 
