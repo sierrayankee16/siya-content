@@ -208,24 +208,29 @@ def rule(wenn, dann, d=None):
 
 P[8] = dict(caption="""Kein Betrieb arbeitet wie der andere. Warum sollte dann jeder dasselbe CRM bekommen?
 
-Bei einem Handwerksbetrieb wird aus einer Anfrage ein Aufmaß, dann ein Angebot, dann ein Auftrag. Im Studio geht es von der Beratung zur Planung bis zur Lieferung. Standard-Software zwingt beide in denselben Ablauf, mit Feldern, die keiner braucht, und Schritten, die nicht passen. Das Ergebnis kennen viele: Das System wird nicht gepflegt, und am Ende liegt doch wieder alles in Excel oder im Kopf.
-
-Wir bauen dein CRM um deinen Ablauf herum: deine Schritte, deine Felder, deine Regeln. Was automatisch passieren soll, legen wir gemeinsam fest. Zum Beispiel, dass eine neue Anfrage sofort beim Zuständigen landet oder dass nach drei Tagen ohne Antwort auf ein Angebot eine Erinnerung kommt.
+Wir bauen dein CRM um deinen Ablauf herum: deine Schritte, deine Felder, deine Regeln. In der Pipeline siehst du jedes Angebot auf einen Blick, auch welches heute nachgefasst werden muss. Und die KI arbeitet mit: Sie fasst neue Anfragen zusammen, schätzt ein, wie heiß sie sind, und schlägt den nächsten Schritt vor. Entscheiden tust du.
 
 Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag wird. Link in der Bio.
 
-#siyamedia #crm #leadmanagement #crmsystem #vertrieb #verkauf #kundengewinnung #kundenmanagement #leads #nachfassen #automatisierung #digitalisierung #prozesse #effizienz #ki #unternehmen #unternehmer #mittelstand #kmu #selbstständig""", slides=[
- {"html": label("Leistung · Individuelles CRM") + "<h1 style='font-size:104px'>Ein CRM, das arbeitet wie <span class='grad'>dein Betrieb.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht umgekehrt.</h3>" + pipe("Dein Ablauf · Beispiel", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], on=True) + "<div style='display:flex;gap:12px;flex-wrap:wrap'><span class='badge' style='font-size:20px;padding:10px 16px'>Eigene Schritte</span><span class='badge' style='font-size:20px;padding:10px 16px'>Eigene Felder</span><span class='badge' style='font-size:20px;padding:10px 16px'>Eigene Regeln</span></div>"},
- {"html": "<h2>Standard-Software passt selten zu deinem Alltag.</h2><div class='split'><div class='half'><h4>Standard-CRM</h4><div class='cross'>Felder, die keiner braucht</div><div class='cross'>Schritte, die nicht passen</div><div class='cross'>Wird nach Wochen nicht mehr gepflegt</div></div><div class='half good'><h4>Dein CRM</h4><div class='tick'>Eure Schritte</div><div class='tick'>Eure Felder</div><div class='tick'>Wird genutzt, weil es passt</div></div></div>"},
+#siyamedia #crm #leadmanagement #crmsystem #vertrieb #salespipeline #kundengewinnung #kundenmanagement #angebote #nachfassen #automatisierung #digitalisierung #prozesse #effizienz #ki #unternehmen #unternehmer #mittelstand #kmu #selbstständig""", slides=[
+ {"html": label("Leistung · Individuelles CRM") + "<h1 style='font-size:104px'>Ein CRM, das arbeitet wie <span class='grad'>dein Betrieb.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht umgekehrt.</h3>" + pipe("Dein Ablauf · Beispiel", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], on=True) + "<div style='display:flex;gap:12px;flex-wrap:wrap'><span class='badge' style='font-size:20px;padding:10px 16px'>Individuell</span><span class='badge' style='font-size:20px;padding:10px 16px'>Pipeline</span><span class='badge' style='font-size:20px;padding:10px 16px'>KI-gestützt</span></div>"},
  {"anim": 6, "html": "<h2 style='font-size:64px'>Gleiches Prinzip. Drei Betriebe. <span class='t'>Drei Abläufe.</span></h2>"
   + pipe("Beispiel Handwerk", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], d=0.5)
   + pipe("Beispiel Studio", ["Anfrage", "Beratung", "Planung", "Lieferung"], d=1.5)
   + pipe("Beispiel Praxis", ["Termin", "Behandlung", "Nachsorge"], d=2.5, on=True)
   + "<p data-in='3.4' style='font-size:32px'>Wir bauen das CRM um <b>deinen</b> Ablauf herum.</p>"},
- {"anim": 6, "html": label("Deine Regeln · Beispiele") + "<h2 style='font-size:62px'>Was automatisch passieren soll, bestimmst du.</h2>"
-  + rule("eine neue Anfrage reinkommt", "Kontakt anlegen, Zuständigen informieren", d=0.5)
-  + rule("ein Angebot 3 Tage offen ist", "Erinnerung zum Nachfassen", d=1.5)
-  + rule("ein Termin bestätigt ist", "Kunde bekommt automatisch eine Nachricht", d=2.5)},
+ {"anim": 6, "html": label("Pipeline · Beispielansicht") + "<h2 style='font-size:64px'>Jedes Angebot im Blick. <span class='t'>Keins wird vergessen.</span></h2>"
+  + "<div style='display:grid;grid-template-columns:1fr 1fr;gap:16px'>"
+  + ui("Angebot offen", "Müller GmbH", "8.400 € · seit 2 Tagen", d=0.5, pop=True)
+  + ui("Nachfassen fällig", "Familie Berger", "12.300 € · seit 5 Tagen", badge="Heute", on=True, d=1.2, pop=True)
+  + ui("Angebot offen", "Kemal Y.", "3.200 € · seit 1 Tag", d=1.9, pop=True)
+  + ui("Gewonnen", "Laura M.", "5.900 € · Auftrag erteilt", badge="✓", d=2.6, pop=True)
+  + "</div><div class='card' data-in='3.3' style='display:flex;justify-content:space-between;align-items:center;padding:26px 34px'><div style='font-size:30px;color:#CDD0E0'>Offene Angebote</div><div class='big grad' style='font-size:76px;letter-spacing:-.03em' data-count='23900' data-in='3.3' data-suffix=' €'>23.900 €</div></div>"},
+ {"anim": 6.5, "html": label("KI-gestützt") + "<h2 style='font-size:64px'>Die KI arbeitet mit. <span class='t'>Du entscheidest.</span></h2>"
+  + "<div class='ui on' data-in='0.4'><div class='uih'><span class='pill'>Neue Anfrage</span><span class='badge'>Heiß</span></div><div style='display:flex;gap:22px;align-items:center'><div class='av'>S</div><div><div class='ut'>Sandra K.</div><div class='us'>über Website · vor 4 Minuten</div></div></div></div>"
+  + "<div class='ui' data-in='1.5'><div class='uih'><span class='pill'>✦ KI-Zusammenfassung</span></div><div class='us' style='color:#FFFFFF;font-size:30px'>Möchte ein Angebot für 6 Fenster, fertig bis Ende November. Hat schon Maße.</div></div>"
+  + "<div class='ui' data-in='2.6'><div class='uih'><span class='pill'>✦ Vorschlag</span></div><div class='us' style='color:#FFFFFF;font-size:30px'>Heute zurückrufen, Termin zum Ausmessen anbieten. Nachfass-Mail liegt als Entwurf bereit.</div></div>"
+  + "<div class='src' data-in='3.4' style='font-size:22px'>Beispielansicht</div>"},
  {"html": "<h1 style='font-size:110px'>Dein Ablauf.<br><span class='grad'>Dein CRM.</span></h1><p>Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag wird.</p>" + cta()},
 ])
 
