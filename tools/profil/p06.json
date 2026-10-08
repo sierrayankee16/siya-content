@@ -6,7 +6,7 @@
  "foot": true,
  "slides": [
   {
-   "html": "<span class='pill'>Beispielablauf</span><h1 style='font-size:118px'>Anzeige gesehen.<br><span class='grad'>Termin gebucht.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Und dazwischen tippt keiner etwas ab.</h3>"
+   "html": "<span class='pill'>Beispielablauf</span><h1 style='font-size:118px'>Anzeige gesehen.<br><span class='grad'>Termin gebucht.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Und in deinem Unternehmen tippt keiner etwas ab.</h3>"
   },
   {
    "anim": 7.5,

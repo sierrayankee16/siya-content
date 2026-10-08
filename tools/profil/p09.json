@@ -6,14 +6,14 @@
  "foot": true,
  "slides": [
   {
-   "html": "<div class='mono label'>Leistung · Wissensassistent</div><h1 style='font-size:108px'>„Wie war das <span class='grad'>nochmal</span> mit …?“</h1><p>Die Frage, die jeder neue Kollege stellt. Und die nur eine Person beantworten kann.</p>"
+   "html": "<div class='mono label'>Leistung · Wissensassistent</div><h1 style='font-size:108px'>„Wie war das <span class='grad'>nochmal</span> mit …?“</h1><p>Die Frage, die in jedem Team fällt. Und die oft nur eine Person beantworten kann.</p>"
   },
   {
    "anim": 6.5,
-   "html": "<span class='pill'>Beispiel · intern</span><div class='phone' style='width:760px'><div class='bar'>Team-Assistent</div><div class='chat'><div class='bin' data-in='0.5'>Wie läuft bei uns eine Reklamation ab?</div><div class='bt' data-in='1.6'>In 4 Schritten: Foto anfordern, Auftrag prüfen, Termin vergeben, Kunde informieren.</div><div class='meta' data-in='2.7'>Quelle: Ablauf Reklamation.pdf</div><div class='bin' data-in='3.8000000000000003'>Und wer gibt Gutschriften frei?</div><div class='bt' data-in='4.9'>Laut Handbuch die Teamleitung.</div></div></div>"
+   "html": "<span class='pill'>Beispiel · intern</span><div class='phone' style='width:760px'><div class='bar'>Wissensassistent · intern</div><div class='chat'><div class='bt' data-in='0.5'>Wie läuft bei uns eine Reklamation ab?</div><div class='bin' data-in='1.6'>In 4 Schritten: Foto anfordern, Auftrag prüfen, Termin vergeben, Kunde informieren.</div><div class='meta' data-in='2.7'>Quelle: Ablauf Reklamation.pdf</div><div class='bt' data-in='3.8000000000000003'>Und wer gibt Gutschriften frei?</div><div class='bin' data-in='4.9'>Laut Handbuch die Teamleitung.</div></div></div>"
   },
   {
-   "html": "<div class='mono label'>Was sich ändert</div><div><div class='row'><div class='num'>01</div><div class='rowt'>Neue Kollegen finden Antworten selbst<span>ohne jedes Mal zu fragen</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>Wissen hängt nicht an einer Person<span>auch nicht im Urlaub</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Antworten aus euren Unterlagen<span>nicht aus dem Internet</span></div></div></div>"
+   "html": "<div class='mono label'>Was sich ändert</div><div><div class='row'><div class='num'>01</div><div class='rowt'>Neue Kollegen finden Antworten selbst<span>ohne jedes Mal zu fragen</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>Wissen hängt nicht an einer Person<span>auch nicht im Urlaub</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Nur aus freigegebenen Unterlagen<span>mit klaren Zugriffsrechten</span></div></div></div>"
   },
   {
    "html": "<h1 style='font-size:100px'>Euer Wissen. <span class='grad'>Für alle abrufbar.</span></h1><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
