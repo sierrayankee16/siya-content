@@ -271,7 +271,10 @@ Was zu deinem Betrieb passt, besprechen wir im Erstgespräch. Link in der Bio.
    ("01 · Produktion", "Fotos, Videos, Reels", "Konzept und Umsetzung"),
    ("02 · Social Media", "Planung und Betreuung", "Strategie, Redaktionsplan, laufende Betreuung"),
    ("03 · Kampagnen", "Sichtbarkeit, die Anfragen bringt", "gezielt in deiner Region")])},
- {"html": label("Flexibel") + "<h1 style='font-size:110px'>Alles. Oder <span class='grad'>nur ein Teil.</span></h1><p>Jeder Bereich ist auch einzeln buchbar.</p>"},
+ {"html": "<h1 style='font-size:92px'>Du kümmerst dich um deine Kunden. <span class='grad'>Wir um deinen Auftritt.</span></h1>" + ticks([
+   "Strategie, Produktion, Betreuung",
+   "Echte Einblicke in deinen Betrieb",
+   "Einzeln oder als Paket buchbar"])},
  {"html": "<h1 style='font-size:100px'>Lass uns zeigen, was <span class='grad'>in deinem Betrieb</span> steckt.</h1>" + cta()},
 ])
 
