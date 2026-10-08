@@ -286,11 +286,9 @@ Link in der Bio. Und wenn du danach tiefer einsteigen willst: Das Erstgespräch 
  {"html": label("Kostenloser KI-Check · WhatsApp") + "<div class='big grad' style='font-size:330px'>2 Min.</div><h1 style='font-size:84px'>und du weißt, wo KI in deinem Unternehmen <span class='t'>passt.</span></h1>"},
  {"anim": 7, "html": "<span class='pill'>Beispiel · so läuft der KI-Check</span>" + phone("SIYA Media · KI-Check", [
    ("out", "Ich möchte den kostenlosen KI-Check."),
-   ("in", "Gern! Ein paar kurze Fragen zu deinem Unternehmen. Wie kommen eure Kundenanfragen rein?"),
-   ("out", "Meist per Telefon und E-Mail."),
-   ("in", "Und welche Aufgabe wiederholt sich bei euch jede Woche?"),
-   ("out", "Termine abstimmen."),
-   ("meta", "✓ Deine erste Einschätzung kommt direkt im Chat")], d0=0.5, step=1.05)},
+   ("in", "Gern! Welche Aufgabe wiederholt sich bei euch jede Woche?"),
+   ("out", "Termine mit Kunden abstimmen.")], d0=0.5, step=1.1)
+ + "<div class='card' data-in='3.9' data-pop='1' style='border:2px solid #59BFAC;background:rgba(89,191,172,.16);padding:30px 36px;display:flex;gap:24px;align-items:center'><div style='width:72px;height:72px;border-radius:50%;background:#59BFAC;color:#070718;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:800;flex:0 0 auto'>✓</div><div><div style='font-size:44px;font-weight:750;line-height:1.15;letter-spacing:-.02em'>Deine erste Einschätzung</div><div style='font-size:30px;color:#CDD0E0;margin-top:6px'>kommt direkt im Chat. Nach ca. 2 Minuten.</div></div></div>"},
  {"html": label("Nach zwei Minuten") + "<h2>Danach weißt du:</h2>" + ticks([
    "Welche Aufgaben sich für KI eignen könnten",
    "Wo du am ehesten anfängst",
