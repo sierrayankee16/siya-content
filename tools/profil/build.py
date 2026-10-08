@@ -196,22 +196,37 @@ Welche Abläufe sich bei dir lohnen, klären wir im Erstgespräch. Link in der B
  {"html": "<h1 style='font-size:100px'>Erst schauen, was da ist. <span class='grad'>Dann verbinden.</span></h1><p>Bestehende Systeme beziehen wir ein. Wo ein Mensch entscheiden soll, bleibt ein Mensch.</p>" + cta()},
 ])
 
-# 08 CRM
-P[8] = dict(caption="""Kurze Frage: Wo steht gerade die Anfrage von letzter Woche? Wer hat zurückgerufen, wann wird nachgefasst?
+# 08 CRM (Hauptprodukt)
+def pipe(title, steps, d=None, on=False):
+    a = f" data-in='{d}' data-pop='1'" if d is not None else ""
+    chips = "<span style='color:#59BFAC;font-size:26px;padding:0 2px'>→</span>".join(f"<span class='pill' style='font-size:26px;padding:10px 16px;color:#FFFFFF;letter-spacing:0;text-transform:none;font-family:Inter,sans-serif;font-weight:600'>{s}</span>" for s in steps)
+    return f"<div class='ui{' on' if on else ''}'{a}><div class='uih'><span class='pill'>{title}</span></div><div style='display:flex;flex-wrap:wrap;align-items:center;gap:8px'>{chips}</div></div>"
+def rule(wenn, dann, d=None):
+    a = f" data-in='{d}'" if d is not None else ""
+    return (f"<div class='ui'{a} style='padding:24px 30px'><div style='font-family:DejaVu Sans Mono,monospace;font-size:18px;letter-spacing:.2em;color:#59BFAC'>WENN</div>"
+            f"<div class='ut' style='font-size:32px'>{wenn}</div><div style='font-family:DejaVu Sans Mono,monospace;font-size:18px;letter-spacing:.2em;color:#59BFAC;margin-top:12px'>DANN</div><div class='us' style='font-size:30px;color:#FFFFFF'>{dann}</div></div>")
 
-Wenn die Antwort „Moment, ich schau mal in die Liste“ lautet, fehlt meistens ein System, das alle nutzen. Wir richten CRM und Leadmanagement so ein, dass jede Anfrage an einem Ort liegt, klar ist, wer dran ist, und niemand das Nachfassen vergisst.
+P[8] = dict(caption="""Kein Betrieb arbeitet wie der andere. Warum sollte dann jeder dasselbe CRM bekommen?
 
-Wie das bei dir aussehen kann, zeigen wir dir im Erstgespräch. Link in der Bio.
+Bei einem Handwerksbetrieb wird aus einer Anfrage ein Aufmaß, dann ein Angebot, dann ein Auftrag. Im Studio geht es von der Beratung zur Planung bis zur Lieferung. Standard-Software zwingt beide in denselben Ablauf, mit Feldern, die keiner braucht, und Schritten, die nicht passen. Das Ergebnis kennen viele: Das System wird nicht gepflegt, und am Ende liegt doch wieder alles in Excel oder im Kopf.
 
-#CRM #Leadmanagement #Vertrieb #Automatisierung #Unternehmen #SIYAMedia""", slides=[
- {"html": label("Leistung · CRM & Leadmanagement") + "<h1 style='font-size:104px'>Wo steht eigentlich die Anfrage von <span class='grad'>letzter Woche?</span></h1>" + ui("Anfrage · 12 Tage alt", "Zuständig: ?", "Letzter Kontakt: ?")},
- {"anim": 6.5, "html": "<h2 style='font-size:62px'>Jede Anfrage. Ein Ort. <span class='t'>Ein nächster Schritt.</span></h2><div style='display:grid;grid-template-columns:repeat(2,1fr);gap:18px'>"
-  + ui("Neu", "Laura M.", "Anfrage über Website", d=0.5, pop=True)
-  + ui("Kontaktiert", "Kemal Y.", "Rückruf erledigt", d=1.2, pop=True)
-  + ui("Termin", "Familie Berger", "Fr, 9:00 Uhr", d=1.9, pop=True)
-  + ui("Nachfassen", "Andreas K.", "Erinnerung morgen", badge="Heute", on=True, d=2.6, pop=True) + "</div><div class='src' data-in='3.4'>Beispielansicht</div>"},
- {"html": "<h2>Warum Anfragen verloren gehen. Und was sich ändert.</h2><div class='split'><div class='half'><h4>Ohne System</h4><div class='cross'>Rückruf kommt zu spät</div><div class='cross'>Nachfassen wird vergessen</div><div class='cross'>Keiner weiß, wer zuständig ist</div></div><div class='half good'><h4>Mit CRM</h4><div class='tick'>Jede Anfrage an einem Ort</div><div class='tick'>Zuständigkeit klar</div><div class='tick'>Erinnerung zum Nachfassen</div></div></div>"},
- {"html": "<h1 style='font-size:100px'>Keine Liste mehr, die <span class='grad'>nur einer versteht.</span></h1>" + cta()},
+Wir bauen dein CRM um deinen Ablauf herum: deine Schritte, deine Felder, deine Regeln. Was automatisch passieren soll, legen wir gemeinsam fest. Zum Beispiel, dass eine neue Anfrage sofort beim Zuständigen landet oder dass nach drei Tagen ohne Antwort auf ein Angebot eine Erinnerung kommt.
+
+Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag wird. Link in der Bio.
+
+#siyamedia #crm #leadmanagement #crmsystem #vertrieb #verkauf #kundengewinnung #kundenmanagement #leads #nachfassen #automatisierung #digitalisierung #prozesse #effizienz #ki #unternehmen #unternehmer #mittelstand #kmu #selbstständig""", slides=[
+ {"html": label("Leistung · Individuelles CRM") + "<h1 style='font-size:104px'>Ein CRM, das arbeitet wie <span class='grad'>dein Betrieb.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht umgekehrt.</h3>" + pipe("Dein Ablauf · Beispiel", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], on=True) + "<div style='display:flex;gap:12px;flex-wrap:wrap'><span class='badge' style='font-size:20px;padding:10px 16px'>Eigene Schritte</span><span class='badge' style='font-size:20px;padding:10px 16px'>Eigene Felder</span><span class='badge' style='font-size:20px;padding:10px 16px'>Eigene Regeln</span></div>"},
+ {"html": "<h2>Standard-Software passt selten zu deinem Alltag.</h2><div class='split'><div class='half'><h4>Standard-CRM</h4><div class='cross'>Felder, die keiner braucht</div><div class='cross'>Schritte, die nicht passen</div><div class='cross'>Wird nach Wochen nicht mehr gepflegt</div></div><div class='half good'><h4>Dein CRM</h4><div class='tick'>Eure Schritte</div><div class='tick'>Eure Felder</div><div class='tick'>Wird genutzt, weil es passt</div></div></div>"},
+ {"anim": 6, "html": "<h2 style='font-size:64px'>Gleiches Prinzip. Drei Betriebe. <span class='t'>Drei Abläufe.</span></h2>"
+  + pipe("Beispiel Handwerk", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], d=0.5)
+  + pipe("Beispiel Studio", ["Anfrage", "Beratung", "Planung", "Lieferung"], d=1.5)
+  + pipe("Beispiel Praxis", ["Termin", "Behandlung", "Nachsorge"], d=2.5, on=True)
+  + "<p data-in='3.4' style='font-size:32px'>Wir bauen das CRM um <b>deinen</b> Ablauf herum.</p>"},
+ {"anim": 6, "html": label("Deine Regeln · Beispiele") + "<h2 style='font-size:62px'>Was automatisch passieren soll, bestimmst du.</h2>"
+  + rule("eine neue Anfrage reinkommt", "Kontakt anlegen, Zuständigen informieren", d=0.5)
+  + rule("ein Angebot 3 Tage offen ist", "Erinnerung zum Nachfassen", d=1.5)
+  + rule("ein Termin bestätigt ist", "Kunde bekommt automatisch eine Nachricht", d=2.5)},
+ {"html": "<h1 style='font-size:110px'>Dein Ablauf.<br><span class='grad'>Dein CRM.</span></h1><p>Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag wird.</p>" + cta()},
 ])
 
 # 09 Wissensassistent
