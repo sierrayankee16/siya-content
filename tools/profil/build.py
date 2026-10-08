@@ -129,26 +129,47 @@ Wie das für deinen Betrieb aussehen kann, klären wir im Erstgespräch. Link in
 ])
 
 # 05 KI-Agent fuer Anfragen
-P[5] = dict(caption="""Deine Kunden schreiben nicht zu deinen Öffnungszeiten. Sie schreiben abends vom Sofa, per WhatsApp.
+def notif(name, msg, time, d=None):
+    a = f" data-in='{d}'" if d is not None else ""
+    return (f"<div{a} style='display:flex;gap:20px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(205,208,224,.14);border-radius:24px;padding:22px 26px;backdrop-filter:blur(6px)'>"
+            f"<div style='width:62px;height:62px;border-radius:16px;background:#25A35A;display:flex;align-items:center;justify-content:center;flex:0 0 auto'><div style='width:30px;height:24px;border-radius:12px;background:#fff'></div></div>"
+            f"<div style='flex:1;min-width:0'><div style='display:flex;justify-content:space-between'><span style='font-size:26px;font-weight:650'>{name}</span><span style='font-size:22px;color:#CDD0E0'>{time}</span></div>"
+            f"<div style='font-size:27px;color:#CDD0E0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{msg}</div></div>"
+            f"<span class='badge' style='font-size:16px;flex:0 0 auto'>✓ Beantwortet</span></div>")
+def tile(n, t, s, d=None, on=False):
+    a = f" data-in='{d}' data-pop='1'" if d is not None else ""
+    return f"<div class='ui{' on' if on else ''}'{a} style='padding:30px'><div class='big grad' style='font-size:64px;letter-spacing:-.02em'>{n}</div><div class='ut' style='margin-top:10px'>{t}</div><div class='us'>{s}</div></div>"
 
-Ein KI-Agent beantwortet sie sofort: Er klärt, was fehlt, beantwortet die üblichen Fragen und legt die Anfrage sortiert für dein Team ab. Wird es kompliziert, übergibt er an einen Menschen. Was er sagen darf und wo er stoppt, legen wir vorher gemeinsam fest.
+P[5] = dict(caption="""Deine Kunden schreiben nicht zu deinen Öffnungszeiten. Sie schreiben abends vom Sofa oder morgens vor der Arbeit, per WhatsApp.
 
-Du willst sehen, wie das bei dir aussehen würde? Erstgespräch über den Link in der Bio.
+Ein KI-Agent antwortet sofort: Er klärt, was fehlt, beantwortet die üblichen Fragen, schlägt einen Termin vor und legt die Anfrage fertig vorbereitet für dein Team ab. Wird es kompliziert, übergibt er an einen Menschen. Was er sagen darf und wo er stoppt, legen wir vorher gemeinsam fest.
 
-#KI #KIAgent #WhatsAppBusiness #Kundenanfragen #Automatisierung #SIYAMedia""", slides=[
- {"html": label("Leistung · KI-Agent für Anfragen") + "<h1 style='font-size:84px'>Dein Kunde schreibt um 22:13 Uhr.<br><span class='grad'>Dein KI-Agent antwortet sofort.</span></h1>" + phone("Dein Unternehmen · WhatsApp", [("out", "Hallo, ich bräuchte ein Angebot für neue Fenster."), ("in", "Gern! Wie viele Fenster sind es ungefähr?")], width=780)},
+Dein Team startet morgens nicht mit offenen Nachrichten, sondern mit fertigen Anfragen. Wie das bei dir aussehen kann, zeigen wir dir im Erstgespräch. Link in der Bio.
+
+#siyamedia #kiagent #chatbot #whatsappbusiness #whatsapp #kundenanfragen #kundenservice #kundenkommunikation #erreichbarkeit #automatisierung #ki #künstlicheintelligenz #kiimunternehmen #digitalisierung #effizienz #unternehmen #unternehmer #mittelstand #kmu #selbstständig""", slides=[
+ {"html": label("Leistung · KI-Agent für Anfragen") + "<h1 style='font-size:108px'>Dein Betrieb schläft.<br><span class='grad'>Dein KI-Agent nicht.</span></h1><div style='display:flex;flex-direction:column;gap:14px'>"
+  + notif("Thomas", "Habt ihr Samstag noch einen Termin frei?", "22:13")
+  + notif("Anna", "Was kostet bei euch eine Beratung?", "23:41")
+  + notif("Mehmet", "Ich bräuchte ein Angebot für neue Fenster", "06:52") + "</div>"},
  {"anim": 7.5, "html": "<span class='pill'>Beispiel · so sieht es dein Kunde</span>" + phone("Dein Unternehmen · WhatsApp", [
    ("out", "Hallo, ich bräuchte ein Angebot für neue Fenster."),
    ("in", "Gern! Wie viele Fenster sind es ungefähr, und bis wann soll es fertig sein?"),
    ("out", "6 Stück, bis Ende November."),
    ("in", "Danke! Passt dir ein Termin zum Ausmessen am Donnerstag um 10 Uhr?"),
    ("out", "Ja, passt."),
-   ("meta", "✓ Termin bestätigt · Anfrage liegt sortiert bei deinem Team")], d0=0.5, step=1.05)},
- {"html": label("Was der Agent übernimmt") + rows([
-   ("Antwortet sofort", "auch nachts und am Wochenende"),
-   ("Fragt nach, was fehlt", "statt dass ihr hinterhertelefoniert"),
-   ("Legt Anfragen sortiert ab", "fertig für dein Team"),
-   ("Übergibt an einen Menschen", "wenn es kompliziert wird")])},
+   ("meta", "✓ Termin bestätigt · Antwort in Sekunden, um 06:52 Uhr")], d0=0.5, step=1.05)},
+ {"html": label("Was der Agent übernimmt") + "<h2 style='font-size:64px'>Vier Dinge, die sonst <span class='t'>dein Team</span> macht.</h2><div style='display:grid;grid-template-columns:1fr 1fr;gap:18px'>"
+  + tile("01", "Antwortet sofort", "auch nachts und am Wochenende")
+  + tile("02", "Fragt nach", "was für ein Angebot fehlt")
+  + tile("03", "Schlägt Termine vor", "passend zu euren Zeiten")
+  + tile("04", "Übergibt an euch", "wenn es kompliziert wird", on=True) + "</div>"},
+ {"anim": 6, "html": "<h2 style='font-size:64px'>Morgens wartet keine Nachricht. <span class='t'>Sondern eine fertige Anfrage.</span></h2>"
+  + "<div class='ui on' data-in='0.5' data-pop='1' style='padding:34px 38px'><div class='uih'><span class='pill'>Neue Anfrage · vorbereitet</span><span class='badge'>Termin steht</span></div>"
+  + "<div style='display:flex;gap:22px;align-items:center;margin-bottom:22px'><div class='av'>M</div><div><div class='ut'>Mehmet A.</div><div class='us'>über WhatsApp · 06:52 Uhr</div></div></div>"
+  + "<div class='row' data-in='1.4'><div class='num'>→</div><div class='rowt'>Anliegen<span>Angebot für 6 neue Fenster</span></div></div>"
+  + "<div class='row' data-in='2.1'><div class='num'>→</div><div class='rowt'>Zeitraum<span>fertig bis Ende November</span></div></div>"
+  + "<div class='row' data-in='2.8'><div class='num'>→</div><div class='rowt'>Termin<span>Ausmessen, Donnerstag 10:00 Uhr</span></div></div></div>"
+  + "<div class='src' data-in='3.4' style='font-size:22px'>Beispielansicht</div>"},
  {"html": "<h1 style='font-size:104px'>Du bestimmst, was er <span class='grad'>sagen darf.</span></h1><p>Inhalte, Grenzen und Übergabepunkte legen wir vorher gemeinsam fest.</p>" + cta()},
 ])
 
