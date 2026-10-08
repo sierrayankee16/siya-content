@@ -9,6 +9,7 @@ Im HTML wirken dieselben Attribute wie bei reel.py:
   data-pop="1"    skaliert statt zu schieben
   data-count="167" zaehlt eine Zahl hoch (data-prefix, data-suffix)
   class="ring"    pulsiert (eingehender Anruf)
+Am Ende steht das fertige Bild mindestens HOLD Sekunden (Lesezeit), dann loopt Instagram.
 Die erste Slide eines Posts sollte statisch bleiben: Das Raster zeigt ihr erstes Bild.
 """
 import sys, json, pathlib, subprocess, shutil
@@ -19,6 +20,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).parent
 FPS = 30
+HOLD = 6.0  # Sekunden Standbild am Ende, bevor Instagram das Video neu startet
 RING = "<style>.ring{border-radius:50%}</style>"
 
 def run(post_file):
@@ -38,6 +40,8 @@ def run(post_file):
             html = html.replace("class=\"scene body", "data-start=\"0\" data-end=\"999\" class=\"scene body", 1)
             pg.set_content(html); pg.wait_for_timeout(200)
             pg.evaluate("document.querySelector('.scene').style.opacity=1")
+            last_in = pg.evaluate("Math.max(0,...[...document.querySelectorAll('[data-in]')].map(e=>+e.dataset.in))")
+            dur = max(float(dur), last_in + 0.6 + HOLD)
             frames = out / f"_f{i:02d}"; shutil.rmtree(frames, ignore_errors=True); frames.mkdir()
             for k in range(int(dur * FPS)):
                 pg.evaluate(f"window.setT({k / FPS}); document.querySelector('.scene').style.opacity=1")
