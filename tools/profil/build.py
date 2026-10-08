@@ -150,7 +150,7 @@ Dein Team startet morgens nicht mit offenen Nachrichten, sondern mit fertigen An
  {"html": label("Leistung · KI-Agent für Anfragen") + "<h1 style='font-size:108px'>Dein Betrieb schläft.<br><span class='grad'>Dein KI-Agent nicht.</span></h1><div style='display:flex;flex-direction:column;gap:14px'>"
   + notif("Thomas", "Habt ihr Samstag noch einen Termin frei?", "22:13")
   + notif("Anna", "Was kostet bei euch eine Beratung?", "23:41")
-  + notif("Mehmet", "Ich bräuchte ein Angebot für neue Fenster", "06:52") + "</div>"},
+  + notif("Markus", "Ich bräuchte ein Angebot für neue Fenster", "06:52") + "</div>"},
  {"anim": 7.5, "html": "<span class='pill'>Beispiel · so sieht es dein Kunde</span>" + phone("Dein Unternehmen · WhatsApp", [
    ("out", "Hallo, ich bräuchte ein Angebot für neue Fenster."),
    ("in", "Gern! Wie viele Fenster sind es ungefähr, und bis wann soll es fertig sein?"),
@@ -165,7 +165,7 @@ Dein Team startet morgens nicht mit offenen Nachrichten, sondern mit fertigen An
   + tile("04", "Übergibt an euch", "wenn es kompliziert wird", on=True) + "</div>"},
  {"anim": 6, "html": "<h2 style='font-size:64px'>Morgens wartet keine Nachricht. <span class='t'>Sondern eine fertige Anfrage.</span></h2>"
   + "<div class='ui on' data-in='0.5' data-pop='1' style='padding:34px 38px'><div class='uih'><span class='pill'>Neue Anfrage · vorbereitet</span><span class='badge'>Termin steht</span></div>"
-  + "<div style='display:flex;gap:22px;align-items:center;margin-bottom:22px'><div class='av'>M</div><div><div class='ut'>Mehmet A.</div><div class='us'>über WhatsApp · 06:52 Uhr</div></div></div>"
+  + "<div style='display:flex;gap:22px;align-items:center;margin-bottom:22px'><div class='av'>M</div><div><div class='ut'>Markus A.</div><div class='us'>über WhatsApp · 06:52 Uhr</div></div></div>"
   + "<div class='row' data-in='1.4'><div class='num'>→</div><div class='rowt'>Anliegen<span>Angebot für 6 neue Fenster</span></div></div>"
   + "<div class='row' data-in='2.1'><div class='num'>→</div><div class='rowt'>Zeitraum<span>fertig bis Ende November</span></div></div>"
   + "<div class='row' data-in='2.8'><div class='num'>→</div><div class='rowt'>Termin<span>Ausmessen, Donnerstag 10:00 Uhr</span></div></div></div>"
