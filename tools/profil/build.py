@@ -228,7 +228,7 @@ Wir bauen dein CRM um deinen Ablauf herum: deine Schritte, deine Felder, deine R
 Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag wird. Link in der Bio.
 
 #siyamedia #crm #leadmanagement #crmsystem #vertrieb #salespipeline #kundengewinnung #kundenmanagement #angebote #nachfassen #automatisierung #digitalisierung #prozesse #effizienz #ki #unternehmen #unternehmer #mittelstand #kmu #selbstständig""", slides=[
- {"html": label("Leistung · Individuelles CRM") + "<h1 style='font-size:104px'>Ein CRM, das arbeitet wie <span class='grad'>dein Betrieb.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht umgekehrt.</h3>" + pipe("Dein Ablauf · Beispiel", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], on=True) + "<div style='display:flex;gap:12px;flex-wrap:wrap'><span class='badge' style='font-size:20px;padding:10px 16px'>Individuell</span><span class='badge' style='font-size:20px;padding:10px 16px'>Pipeline</span><span class='badge' style='font-size:20px;padding:10px 16px'>KI-gestützt</span></div>"},
+ {"html": label("Leistung · CRM") + "<h1 style='font-size:104px'>Ein CRM, das arbeitet wie <span class='grad'>dein Betrieb.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht umgekehrt.</h3>" + pipe("Dein Ablauf · Beispiel", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], on=True)},
  {"anim": 6, "html": "<h2 style='font-size:64px'>Gleiches Prinzip. Drei Betriebe. <span class='t'>Drei Abläufe.</span></h2>"
   + pipe("Beispiel Handwerk", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], d=0.5)
   + pipe("Beispiel Studio", ["Anfrage", "Beratung", "Planung", "Lieferung"], d=1.5)
