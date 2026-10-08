@@ -229,7 +229,7 @@ Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag w
 
 #siyamedia #crm #leadmanagement #crmsystem #vertrieb #salespipeline #kundengewinnung #kundenmanagement #angebote #nachfassen #automatisierung #digitalisierung #prozesse #effizienz #ki #unternehmen #unternehmer #mittelstand #kmu #selbstständig""", slides=[
  {"html": label("Leistung · CRM") + "<h1 style='font-size:104px'>Ein CRM, das arbeitet wie <span class='grad'>dein Betrieb.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht umgekehrt.</h3>" + pipe("Dein Ablauf · Beispiel", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], on=True)},
- {"html": "<h2 style='font-size:64px'>Gleiches Prinzip. Drei Betriebe. <span class='t'>Drei Abläufe.</span></h2>"
+ {"anim": 6, "html": "<h2 style='font-size:64px'>Gleiches Prinzip. Drei Betriebe. <span class='t'>Drei Abläufe.</span></h2>"
   + pipe("Beispiel Handwerk", ["Anfrage", "Aufmaß", "Angebot", "Auftrag"], d=0.5)
   + pipe("Beispiel Studio", ["Anfrage", "Beratung", "Planung", "Lieferung"], d=1.5)
   + pipe("Beispiel Praxis", ["Termin", "Behandlung", "Nachsorge"], d=2.5, on=True)
@@ -241,7 +241,7 @@ Im Erstgespräch schauen wir uns an, wie bei dir aus einer Anfrage ein Auftrag w
   + ui("Angebot offen", "Kemal Y.", "3.200 € · seit 1 Tag", d=1.9, pop=True)
   + ui("Gewonnen", "Laura M.", "5.900 € · Auftrag erteilt", badge="✓", d=2.6, pop=True)
   + "</div><div class='card' data-in='3.3' style='display:flex;justify-content:space-between;align-items:center;padding:26px 34px'><div style='font-size:30px;color:#CDD0E0'>Offene Angebote</div><div class='big grad' style='font-size:76px;letter-spacing:-.03em' data-count='23900' data-in='3.3' data-suffix=' €'>23.900 €</div></div>"},
- {"html": label("KI-gestützt") + "<h2 style='font-size:64px'>Die KI arbeitet mit. <span class='t'>Du entscheidest.</span></h2>"
+ {"anim": 6.5, "html": label("KI-gestützt") + "<h2 style='font-size:64px'>Die KI arbeitet mit. <span class='t'>Du entscheidest.</span></h2>"
   + "<div class='ui on' data-in='0.4'><div class='uih'><span class='pill'>Neue Anfrage</span><span class='badge'>Heiß</span></div><div style='display:flex;gap:22px;align-items:center'><div class='av'>S</div><div><div class='ut'>Sandra K.</div><div class='us'>über Website · vor 4 Minuten</div></div></div></div>"
   + "<div class='ui' data-in='1.5'><div class='uih'><span class='pill'>✦ KI-Zusammenfassung</span></div><div class='us' style='color:#FFFFFF;font-size:30px'>Möchte ein Angebot für 6 Fenster, fertig bis Ende November. Hat schon Maße.</div></div>"
   + "<div class='ui' data-in='2.6'><div class='uih'><span class='pill'>✦ Vorschlag</span></div><div class='us' style='color:#FFFFFF;font-size:30px'>Heute zurückrufen, Termin zum Ausmessen anbieten. Nachfass-Mail liegt als Entwurf bereit.</div></div>"
