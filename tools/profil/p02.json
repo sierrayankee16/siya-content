@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-02",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>So arbeiten wir</div><div class='big grad' style='font-size:420px'>4</div><h2 style='font-size:84px'>Schritte vom ersten Gespräch bis zur KI, die <span class='t'>läuft.</span></h2>"
+  },
+  {
+   "anim": 6.5,
+   "html": "<h2 style='font-size:66px'>Kein Paket von der Stange.</h2><div class='tl'><div class='step' data-in='0.6'><div class='ui on'><div class='uih'><span class='pill'>01 · Zuhören</span></div><div class='ut'>Wo geht bei euch Zeit verloren?</div><div class='us'>Wir schauen auf Anfragen, Abläufe, Systeme.</div></div></div><div class='step' data-in='1.6'><div class='ui'><div class='uih'><span class='pill'>02 · Planen</span></div><div class='ut'>Konkreter Vorschlag</div><div class='us'>Mit Reihenfolge und Aufwand. Du entscheidest.</div></div></div><div class='step' data-in='2.6'><div class='ui'><div class='uih'><span class='pill'>03 · Bauen & testen</span></div><div class='ut'>An echten Fällen</div><div class='us'>Dein Team wird vor dem Start eingewiesen.</div></div></div><div class='step' data-in='3.6'><div class='ui'><div class='uih'><span class='pill'>04 · Dranbleiben</span></div><div class='ut'>Anpassen statt vergessen</div><div class='us'>Änderungen nach fester Absprache.</div></div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Nach dem Erstgespräch</div><h2>Das hast du danach in der Hand:</h2><div class='card' style='padding:34px 38px'><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Eine ehrliche Einschätzung, wo KI bei dir passt</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Die Stellen, an denen es sich zuerst lohnt</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Einen klaren nächsten Schritt</div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:104px'>Schritt 1 kostet <span class='grad'>nichts.</span></h1><p>Wir melden uns innerhalb eines Werktags.</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

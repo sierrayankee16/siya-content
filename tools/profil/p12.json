@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-12",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>Kostenlos auf WhatsApp</div><div class='big grad' style='font-size:330px'>2 Min.</div><h1 style='font-size:92px'>und du weißt, wo KI bei dir <span class='t'>passt.</span></h1>"
+  },
+  {
+   "anim": 7,
+   "html": "<span class='pill'>So läuft der KI-Check</span><div class='phone' style='width:760px'><div class='bar'>WhatsApp · KI-Check</div><div class='chat'><div class='bt' data-in='0.5'>Hi! Wie kommen bei euch die meisten Anfragen rein?</div><div class='bin' data-in='1.65'>Telefon und E-Mail.</div><div class='bt' data-in='2.8'>Und welche Aufgabe kostet euch jede Woche am meisten Zeit?</div><div class='bin' data-in='3.9499999999999997'>Termine abstimmen.</div><div class='meta' data-in='5.1'>✓ Erste Einschätzung kommt direkt im Chat</div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Nach zwei Minuten</div><h2>Danach weißt du:</h2><div class='card' style='padding:34px 38px'><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Welche Aufgaben sich für KI eignen könnten</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Wo du am ehesten anfängst</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Ob ein Erstgespräch sich lohnt</div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:100px'>Kurz testen, <span class='grad'>dann entscheiden.</span></h1><p>Den KI-Check findest du über den Link in der Bio. Danach:</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

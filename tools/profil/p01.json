@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-01",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<span class='pill'>Für Unternehmen</span><h1 style='font-size:128px'>KI, die<br><span class='grad'>mitarbeitet.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht nur in der Präsentation.</h3><div style='display:flex;gap:14px;flex-wrap:wrap'><span class='pill'>Telefon</span><span class='pill'>Anfragen</span><span class='pill'>Abläufe</span><span class='pill'>Marketing</span></div>"
+  },
+  {
+   "anim": 6,
+   "html": "<div class='mono label'>Was wir übernehmen</div><h2>Vier Stellen, an denen dein Team Zeit zurückbekommt.</h2><div style='display:grid;grid-template-columns:1fr 1fr;gap:20px'><div class='ui' data-in='0.6' data-pop='1'><div class='uih'><span class='pill'>Telefon</span></div><div class='ut'>KI nimmt Anrufe an</div><div class='us'>auch nach Feierabend</div></div><div class='ui' data-in='1.2' data-pop='1'><div class='uih'><span class='pill'>Chat</span></div><div class='ut'>Anfragen sofort beantwortet</div><div class='us'>WhatsApp & Website</div></div><div class='ui' data-in='1.8' data-pop='1'><div class='uih'><span class='pill'>Abläufe</span></div><div class='ut'>Daten laufen von allein</div><div class='us'>Mail, Kalender, CRM</div></div><div class='ui' data-in='2.4' data-pop='1'><div class='uih'><span class='pill'>Marketing</span></div><div class='ut'>Werbung, die Anfragen bringt</div><div class='us'>Content & Kampagnen</div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>So arbeiten wir</div><h2>Erst zuhören. <span class='t'>Dann bauen.</span></h2><div><div class='row'><div class='num'>01</div><div class='rowt'>Wir schauen uns eure Abläufe an<span>bevor wir irgendetwas vorschlagen</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>Ihr bucht nur, was ihr braucht<span>jede Leistung gibt es auch einzeln</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Nach dem Start bleiben wir dran<span>und passen an, wenn sich etwas ändert</span></div></div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:96px'>Wo verliert dein Betrieb gerade <span class='grad'>Zeit?</span></h1><p>Im Erstgespräch finden wir es gemeinsam heraus. Danach weißt du, wo KI sich lohnt.</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

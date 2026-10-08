@@ -1,0 +1,21 @@
+{
+ "out": "out/profil-11",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>Leistung · SIYA GROWTH</div><h1 style='font-size:108px'>Content, der nach <span class='grad'>eurem Betrieb</span> aussieht.</h1><p>Nicht nach Stockfoto.</p>"
+  },
+  {
+   "html": "<h2>Drei Bereiche, die wir übernehmen:</h2><div class='ui'><div class='uih'><span class='pill'>01 · Produktion</span></div><div class='ut'>Fotos, Videos, Reels</div><div class='us'>Konzept und Umsetzung</div></div><div class='ui'><div class='uih'><span class='pill'>02 · Social Media</span></div><div class='ut'>Planung und Betreuung</div><div class='us'>Strategie, Redaktionsplan, Community</div></div><div class='ui'><div class='uih'><span class='pill'>03 · Kampagnen</span></div><div class='ut'>Sichtbarkeit, die Anfragen bringt</div><div class='us'>gezielt in deiner Region</div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Flexibel</div><h1 style='font-size:110px'>Alles. Oder <span class='grad'>nur ein Teil.</span></h1><p>Jeder Bereich ist auch einzeln buchbar.</p>"
+  },
+  {
+   "html": "<h1 style='font-size:100px'>Lass uns zeigen, was <span class='grad'>in deinem Betrieb</span> steckt.</h1><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-07",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>Leistung · Automatisierung</div><div style='display:flex;gap:20px;align-items:center'><div class='ui' style='font-size:60px;font-weight:700;padding:26px 34px'>Strg + C</div><div class='ui' style='font-size:60px;font-weight:700;padding:26px 34px'>Strg + V</div></div><h1 style='font-size:110px'>Wie oft heute <span class='grad'>schon?</span></h1><p>Dieselben Daten von A nach B. Jeden Tag.</p>"
+  },
+  {
+   "anim": 6.5,
+   "html": "<h2 style='font-size:66px'>Einmal einrichten. <span class='t'>Läuft.</span></h2><div class='tl'><div class='step' data-in='0.5'><div class='ui'><div class='uih'><span class='pill'>E-Mail</span></div><div class='ut'>Anfrage kommt rein</div></div></div><div class='step' data-in='1.5'><div class='ui'><div class='uih'><span class='pill'>CRM</span><span class='badge'>Automatisch</span></div><div class='ut'>Kontakt automatisch angelegt</div></div></div><div class='step' data-in='2.5'><div class='ui'><div class='uih'><span class='pill'>Kalender</span><span class='badge'>Automatisch</span></div><div class='ut'>Termin eingetragen</div></div></div><div class='step' data-in='3.5'><div class='ui on'><div class='uih'><span class='pill'>Team</span><span class='badge'>Automatisch</span></div><div class='ut'>Zuständiger bekommt Bescheid</div></div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Typische Abläufe</div><h2>Das automatisieren wir zum Beispiel:</h2><div><div class='row'><div class='num'>01</div><div class='rowt'>Anfragen vorsortieren<span>nach Dringlichkeit und Thema</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>Termine buchen und bestätigen</div></div><div class='row'><div class='num'>03</div><div class='rowt'>Daten zwischen Programmen übertragen</div></div><div class='row'><div class='num'>04</div><div class='rowt'>Kunden auf dem Laufenden halten<span>Eingang, Status, Erinnerung</span></div></div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:100px'>Erst schauen, was da ist. <span class='grad'>Dann verbinden.</span></h1><p>Wo ein Mensch entscheiden soll, bleibt ein Mensch.</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

@@ -12,8 +12,10 @@ Spec:
   "slides": [ "<html>", {"theme": "accent", "html": "<html>", "align": "top|center|bottom"} ]
 }
 
-Stile:
-  dark   Navy mit Raster (Website-Look)
+Stile (ab 08.10.2026 nur noch siya / siyalight verwenden):
+  siya      Navy #070718 wie die Website, Tuerkis #59BFAC als Akzent, kraeftiger Lichtschein
+  siyalight Hell #F6F7FA, Navy-Schrift, Tuerkis #2E8F7E
+  (alt) dark   Navy mit Raster (Website-Look)
   light  Hellgrau mit Raster
   accent Volle Tuerkis-Flaeche, Navy-Schrift
   paper  Warmes Papier, keine Raster, ruhig
@@ -23,6 +25,8 @@ Bausteine (CSS-Klassen): label, h1, h2, h3, t (Akzentfarbe), hl (Marker),
 p, card, row/num/rowt, flow/node/link(.bad), big, chip, chipfill, src, mono,
 phone (Handy-Rahmen) mit chat/bin/bout (Chat-Blasen), note (Notizzettel),
 quote, stamp, split/half (Vorher/Nachher), tick/cross (Listenpunkte).
+Neu: cta (Button "Erstgespraech vereinbaren"), pill (Rahmen-Label wie auf der Website),
+badge (gefuelltes Label), ui (UI-Karte) mit uih (Kopfzeile), tl/step (Ablauf mit Punkten).
 """
 import base64, sys, json, pathlib
 from playwright.sync_api import sync_playwright
@@ -33,6 +37,8 @@ LOGO_LIGHTTEXT = b64("logo_c.png")      # weisse Schrift
 LOGO_DARKTEXT = b64("logo_dark.png")    # navy Schrift
 
 THEMES = {
+    "siya":  {"bg": "#070718", "fg": "#FFFFFF", "sub": "#CDD0E0", "acc": "#59BFAC", "line": "rgba(205,208,224,.14)", "grid": "rgba(255,255,255,.03)", "card": "rgba(16,18,42,.88)", "logo": LOGO_LIGHTTEXT, "glow": "siya"},
+    "siyalight": {"bg": "#F6F7FA", "fg": "#070718", "sub": "#4A4D63", "acc": "#2E8F7E", "line": "rgba(7,7,24,.1)", "grid": "rgba(7,7,24,.035)", "card": "#FFFFFF", "logo": LOGO_DARKTEXT, "glow": "siyalight"},
  "dark":   {"bg": "#070718", "fg": "#FFFFFF", "sub": "#CDD0E0", "acc": "#59BFAC", "line": "rgba(205,208,224,.14)", "grid": "rgba(255,255,255,.035)", "card": "rgba(20,22,48,.75)", "logo": LOGO_LIGHTTEXT, "glow": True},
  "light":  {"bg": "#F6F7FA", "fg": "#0B0B1F", "sub": "#4A4D63", "acc": "#2E8F7E", "line": "rgba(11,11,31,.1)", "grid": "rgba(11,11,31,.045)", "card": "#FFFFFF", "logo": LOGO_DARKTEXT, "glow": False},
  "accent": {"bg": "#59BFAC", "fg": "#070718", "sub": "#0E2E2A", "acc": "#FFFFFF", "line": "rgba(7,7,24,.18)", "grid": "rgba(7,7,24,.06)", "card": "rgba(255,255,255,.9)", "logo": LOGO_DARKTEXT, "glow": False},
@@ -54,6 +60,14 @@ def css(t, w, h, story):
     if t["glow"] == "brandlight":
         glow = (".s:after{content:'';position:absolute;inset:0;background:radial-gradient(900px 600px at 110% 0%,rgba(22,99,240,.18),transparent 60%);z-index:0}"
                 ".t{background:linear-gradient(90deg,#06B6D4,#1663F0);-webkit-background-clip:text;background-clip:text;color:transparent!important}")
+    if t["glow"] == "siya":
+        glow = (".s:after{content:'';position:absolute;inset:0;background:radial-gradient(1000px 760px at 110% -10%,rgba(89,191,172,.30),transparent 60%),radial-gradient(760px 620px at -14% 112%,rgba(1,180,223,.20),transparent 62%);z-index:0}"
+                ".big.t,.grad{background:linear-gradient(90deg,#59BFAC,#3FE0D0 55%,#01C8E1);-webkit-background-clip:text;background-clip:text;color:transparent!important}"
+                ".card,.ui{box-shadow:0 24px 60px rgba(0,0,0,.40)}")
+    if t["glow"] == "siyalight":
+        glow = (".s:after{content:'';position:absolute;inset:0;background:radial-gradient(900px 640px at 112% -6%,rgba(89,191,172,.22),transparent 60%);z-index:0}"
+                ".big.t,.grad{background:linear-gradient(90deg,#2E8F7E,#0E9FB8);-webkit-background-clip:text;background-clip:text;color:transparent!important}"
+                ".card,.ui{box-shadow:0 18px 44px rgba(7,7,24,.08)}")
     return f"""
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:{w}px;height:{h}px}}
@@ -106,10 +120,25 @@ p b{{color:{t['fg']};font-weight:600}}
 .phone{{width:620px;margin:0 auto;border-radius:56px;border:12px solid #1B1B22;background:#F2F2F7;padding:34px 26px 40px;box-shadow:0 30px 70px rgba(0,0,0,.35)}}
 .phone .bar{{text-align:center;font-size:28px;font-weight:600;color:#111;padding-bottom:22px;border-bottom:1px solid #DDD;margin-bottom:22px}}
 .chat{{display:flex;flex-direction:column;gap:14px}}
-.bin,.bout{{max-width:84%;padding:20px 26px;border-radius:26px;font-size:33px;line-height:1.32}}
+.bin,.bout,.bt{{max-width:84%;padding:20px 26px;border-radius:26px;font-size:33px;line-height:1.32}}
 .bin{{background:#FFFFFF;color:#111;align-self:flex-start;border-bottom-left-radius:6px}}
 .bout{{background:#1663F0;color:#FFFFFF;align-self:flex-end;border-bottom-right-radius:6px}}
 .meta{{font-size:22px;color:#8A8A93;text-align:center}}
+.cta{{display:inline-flex;align-items:center;gap:22px;background:#59BFAC;color:#070718;font-size:38px;font-weight:650;padding:30px 44px;border-radius:6px;letter-spacing:-.01em;align-self:flex-start}}
+.cta:after{{content:'→';font-size:40px}}
+.pill{{display:inline-flex;align-items:center;gap:12px;border:1px solid {t['line']};border-radius:999px;padding:12px 24px;font-family:'DejaVu Sans Mono',monospace;letter-spacing:.24em;text-transform:uppercase;font-size:19px;color:{t['sub']};align-self:flex-start}}
+.badge{{display:inline-block;background:#59BFAC;color:#070718;border-radius:4px;padding:6px 12px;font-family:'DejaVu Sans Mono',monospace;letter-spacing:.18em;text-transform:uppercase;font-size:17px;font-weight:700}}
+.ui{{border:1px solid {t['line']};background:{t['card']};border-radius:18px;padding:28px 32px}}
+.ui.on{{border-color:#59BFAC}}
+.uih{{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}}
+.uih .pill{{font-size:16px;padding:8px 16px}}
+.ui .ut{{font-size:36px;font-weight:600;letter-spacing:-.015em;line-height:1.25}}
+.ui .us{{font-size:28px;color:{t['sub']};margin-top:6px;line-height:1.35}}
+.tl{{display:flex;flex-direction:column;gap:18px;border-left:2px solid {t['line']};margin-left:12px;padding-left:36px}}
+.step{{position:relative}}
+.step:before{{content:'';position:absolute;left:-46px;top:34px;width:16px;height:16px;border-radius:50%;background:{t['bg']};border:3px solid #59BFAC}}
+.av{{width:64px;height:64px;border-radius:50%;background:#59BFAC;color:#070718;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:600;flex:0 0 auto}}
+.bt{{background:#2B7F72;color:#FFFFFF;align-self:flex-end;border-bottom-right-radius:6px}}
 """
 
 def page(slide, default_theme, idx, total, tag, story, show_foot):

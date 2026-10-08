@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-06",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<span class='pill'>Beispielablauf</span><h1 style='font-size:118px'>Anzeige gesehen.<br><span class='grad'>Termin gebucht.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Und dazwischen tippt keiner etwas ab.</h3>"
+  },
+  {
+   "anim": 7.5,
+   "html": "<div class='tl'><div class='step' data-in='0.4'><div class='ui'><div class='uih'><span class='pill'>Werbeanzeige</span></div><div class='ut'>Neues Bad? Jetzt Beratung sichern</div><div class='us'>Kampagne in der Region</div></div></div><div class='step' data-in='1.5'><div class='ui on'><div class='uih'><span class='pill'>Anfrage</span><span class='badge'>Neu</span></div><div style='display:flex;gap:22px;align-items:center'><div class='av'>T</div><div><div class='ut'>Thomas B.</div><div class='us'>möchte sein Bad renovieren</div></div></div></div></div><div class='step' data-in='2.8'><div class='ui'><div class='uih'><span class='pill'>KI klärt vor</span></div><div class='ut'>Wie groß? Bis wann? Budget grob?</div><div class='us'>per Telefon oder WhatsApp</div></div></div><div class='step' data-in='4.1' data-pop='1'><div class='ui on'><div class='uih'><span class='pill'>Termin bestätigt</span><span class='badge'>Erledigt</span></div><div class='ut'>Beratung Donnerstag, 10:00 Uhr</div><div class='us'>steht im Kalender, Team informiert</div></div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Wo es sonst hängt</div><h2>Drei Stellen, an denen Anfragen verloren gehen:</h2><div class='card' style='padding:34px 38px'><div class='cross' style='font-size:38px;line-height:1.35;margin:10px 0'>Die Anfrage liegt im Postfach</div><div class='cross' style='font-size:38px;line-height:1.35;margin:10px 0'>Der Rückruf erreicht niemanden</div><div class='cross' style='font-size:38px;line-height:1.35;margin:10px 0'>Der Termin geht per Mail hin und her</div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:96px'>Wir bauen die ganze Strecke.<br><span class='grad'>Oder das Stück, das fehlt.</span></h1><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

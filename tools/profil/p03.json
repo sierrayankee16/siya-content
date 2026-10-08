@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-03",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>Live testen</div><h1 style='font-size:118px'>Ruf unsere<br><span class='grad'>KI</span> an.</h1><div class='card' style='display:flex;align-items:center;gap:30px;padding:30px 34px'><div class='ring ' style='width:104px;height:104px;border-radius:50%;background:#30A46C;display:flex;align-items:center;justify-content:center;font-size:50px;flex:0 0 auto'>✆</div><div><div style='font-size:28px;color:#CDD0E0'>KI-Assistentin von SIYA Media</div><div style='font-size:44px;font-weight:700'>Maya</div></div></div><div class='big' style='font-size:92px;letter-spacing:-.02em'>02323 3986083</div>"
+  },
+  {
+   "anim": 7,
+   "html": "<span class='pill'>Beispielgespräch</span><div class='phone' style='width:760px'><div class='bar'>Maya · Anruf läuft</div><div class='chat'><div class='bin' data-in='0.5'>Hallo, ich hätte gern einen Termin.</div><div class='bt' data-in='1.45'>Gern. Worum geht es denn?</div><div class='bin' data-in='2.4'>Um eine Beratung, am liebsten nächste Woche.</div><div class='bt' data-in='3.3499999999999996'>Dienstag 14:30 Uhr oder Donnerstag 10 Uhr?</div><div class='bin' data-in='4.3'>Donnerstag passt.</div><div class='meta' data-in='5.25'>✓ Termin eingetragen · Zusammenfassung verschickt</div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Was Maya kann</div><h2>Das macht sie bei jedem Anruf.</h2><div class='card' style='padding:34px 38px'><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Nimmt Anrufe an, auch nach Feierabend</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Beantwortet häufige Fragen</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Nimmt das Anliegen auf</div><div class='tick' style='font-size:38px;line-height:1.35;margin:10px 0'>Vereinbart Termine</div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:92px'>So klingt dein Betrieb, wenn <span class='grad'>KI rangeht.</span></h1><div class='big' style='font-size:84px;letter-spacing:-.02em'>02323 3986083</div><p>Danach reden wir über deine Version:</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

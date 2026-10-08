@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-10",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>Leistung · Kampagnen & Leads</div><h1 style='font-size:118px'>Werbung für <span class='grad'>Anfragen.</span></h1><h2 style='color:#CDD0E0;font-weight:500;font-size:70px'>Nicht für Likes.</h2>"
+  },
+  {
+   "anim": 6,
+   "html": "<h2 style='font-size:64px'>Von der Anzeige bis zum Gespräch.</h2><div style='display:flex;flex-direction:column;gap:16px;align-items:center'><div class='ui' data-in='0.5' data-pop='1' style='width:100%;text-align:center'><div class='ut'>Anzeige</div><div class='us'>die richtige Zielgruppe in der Region</div></div><div class='ui' data-in='1.4' data-pop='1' style='width:86%;text-align:center'><div class='ut'>Klick</div><div class='us'>klarer nächster Schritt</div></div><div class='ui' data-in='2.3' data-pop='1' style='width:72%;text-align:center'><div class='ut'>Anfrage</div><div class='us'>sofort bearbeitet</div></div><div class='ui on' data-in='3.2' data-pop='1' style='width:58%;text-align:center'><div class='ut'>Gespräch</div><div class='us'></div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Worauf wir achten</div><div><div class='row'><div class='num'>01</div><div class='rowt'>Die richtigen Leute<span>in deiner Region, mit echtem Bedarf</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>Ein klarer nächster Schritt<span>Formular, Anruf oder WhatsApp</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Keine Anfrage bleibt liegen<span>weil die Bearbeitung mitgedacht ist</span></div></div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:100px'>Mehr Budget löst <span class='grad'>selten</span> das Problem.</h1><p>Oft fehlt der Schritt nach dem Klick. Den bauen wir mit.</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}

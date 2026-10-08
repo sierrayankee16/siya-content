@@ -1,0 +1,22 @@
+{
+ "out": "out/profil-05",
+ "size": "post",
+ "theme": "siya",
+ "tag": "",
+ "foot": true,
+ "slides": [
+  {
+   "html": "<div class='mono label'>Leistung · KI-Agent für Anfragen</div><h1 style='font-size:112px'>22:13 Uhr.<br><span class='grad'>Antwort nach Sekunden.</span></h1><div class='phone' style='width:780px'><div class='bar'>WhatsApp</div><div class='chat'><div class='bin'>Hi, habt ihr nächste Woche noch einen Termin frei?</div><div class='bt'>Hallo! Ja, Mittwoch oder Freitag. Worum geht es?</div></div></div>"
+  },
+  {
+   "anim": 7.5,
+   "html": "<span class='pill'>Beispiel</span><div class='phone' style='width:760px'><div class='bar'>WhatsApp · KI-Agent</div><div class='chat'><div class='bin' data-in='0.5'>Was kostet eine Beratung bei euch?</div><div class='bt' data-in='1.65'>Die Erstberatung ist kostenlos. Darf ich kurz fragen, worum es geht?</div><div class='bin' data-in='2.8'>Wir wollen unseren Laden umbauen.</div><div class='bt' data-in='3.9499999999999997'>Danke! Wann wäre ein Termin vor Ort gut für dich?</div><div class='meta' data-in='5.1'>✓ Anfrage sortiert abgelegt · Team informiert</div></div></div>"
+  },
+  {
+   "html": "<div class='mono label'>Was der Agent übernimmt</div><div><div class='row'><div class='num'>01</div><div class='rowt'>Antwortet sofort<span>auch nachts und am Wochenende</span></div></div><div class='row'><div class='num'>02</div><div class='rowt'>Fragt nach, was fehlt<span>statt dass ihr hinterhertelefoniert</span></div></div><div class='row'><div class='num'>03</div><div class='rowt'>Legt Anfragen sortiert ab<span>fertig für dein Team</span></div></div><div class='row'><div class='num'>04</div><div class='rowt'>Übergibt an einen Menschen<span>wenn es kompliziert wird</span></div></div></div>"
+  },
+  {
+   "html": "<h1 style='font-size:104px'>Du bestimmst, was er <span class='grad'>sagen darf.</span></h1><p>Inhalte, Grenzen und Übergabepunkte legen wir vorher gemeinsam fest.</p><div class='cta' data-in='0'>Jetzt Erstgespräch vereinbaren</div><div class='src' style='font-size:24px'>Kostenlos und unverbindlich · Link in der Bio</div>"
+  }
+ ]
+}
