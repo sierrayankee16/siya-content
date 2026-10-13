@@ -58,7 +58,7 @@ Auf diesem Account zeigen wir, was heute schon möglich ist. Und wenn du wissen 
  {"html": label("So arbeiten wir") + "<h2>Zuhören. Bauen. <span class='t'>Dranbleiben.</span></h2>" + rows([
    ("Wir schauen uns deine Abläufe an", "bevor wir irgendetwas vorschlagen"),
    ("Wir bauen und testen mit deinem Team", "an echten Fällen aus deinem Alltag"),
-   ("Nach dem Start bleiben wir dran", "wir betreuen dich und passen an, wenn sich etwas ändert")])},
+   ("Nach dem Start bleiben wir dran", "und entwickeln weiter, wenn dein Betrieb wächst")])},
  {"html": "<h1 style='font-size:96px'>Wo verliert dein Betrieb gerade <span class='grad'>Zeit?</span></h1><p>Im Erstgespräch finden wir es gemeinsam heraus. Danach weißt du, wo KI sich lohnt.</p>" + cta()},
 ])
 
