@@ -49,15 +49,15 @@ Kein Tool-Abo, das nach drei Wochen keiner mehr öffnet. Sondern Abläufe, die i
 Auf diesem Account zeigen wir, was heute schon möglich ist. Und wenn du wissen willst, wo das bei dir ansetzen kann: Das Erstgespräch ist kostenlos. Link in der Bio.
 
 #KI #Automatisierung #Unternehmen #Mittelstand #Marketing #SIYAMedia""", slides=[
- {"html": "<span class='pill'>Für Unternehmen</span><h1 style='font-size:128px'>KI, die<br><span class='grad'>mitarbeitet.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht nur in der Präsentation.</h3><div style='display:flex;gap:14px;flex-wrap:wrap'><span class='pill'>Telefon</span><span class='pill'>Anfragen</span><span class='pill'>Abläufe</span><span class='pill'>Marketing</span></div>"},
+ {"html": "<span class='pill'>Für Unternehmen</span><h1 style='font-size:128px'>KI, die<br><span class='grad'>mitarbeitet.</span></h1><h3 style='color:#CDD0E0;font-weight:500'>Nicht nur nebenher.</h3><div style='display:flex;gap:14px;flex-wrap:wrap'><span class='pill'>Telefon</span><span class='pill'>Anfragen</span><span class='pill'>Abläufe</span><span class='pill'>Marketing</span></div>"},
  {"anim": 6, "html": label("Was wir übernehmen") + "<h2>Vier Stellen, an denen dein Team Zeit zurückbekommt.</h2><div style='display:grid;grid-template-columns:1fr 1fr;gap:20px'>"
   + ui("Telefon", "KI nimmt Anrufe an", "auch nach Feierabend", d=0.6, pop=True)
   + ui("Chat", "Anfragen sofort beantwortet", "z. B. per WhatsApp", d=1.2, pop=True)
   + ui("Abläufe", "Daten laufen von allein", "Mail, Kalender, CRM", d=1.8, pop=True)
   + ui("Marketing", "Werbung, die Anfragen bringt", "Content & Kampagnen", d=2.4, pop=True) + "</div>"},
  {"html": label("So arbeiten wir") + "<h2>Erst zuhören. <span class='t'>Dann bauen.</span></h2>" + rows([
-   ("Wir schauen uns eure Abläufe an", "bevor wir irgendetwas vorschlagen"),
-   ("Ihr bucht nur, was ihr braucht", "jede Leistung gibt es auch einzeln"),
+   ("Wir schauen uns deine Abläufe an", "bevor wir irgendetwas vorschlagen"),
+   ("Du buchst nur, was du brauchst", "jede Leistung gibt es auch einzeln"),
    ("Nach dem Start bleiben wir dran", "und passen an, wenn sich etwas ändert")])},
  {"html": "<h1 style='font-size:96px'>Wo verliert dein Betrieb gerade <span class='grad'>Zeit?</span></h1><p>Im Erstgespräch finden wir es gemeinsam heraus. Danach weißt du, wo KI sich lohnt.</p>" + cta()},
 ])
