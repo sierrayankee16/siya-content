@@ -55,10 +55,10 @@ Auf diesem Account zeigen wir, was heute schon möglich ist. Und wenn du wissen 
   + ui("Chat", "Anfragen sofort beantwortet", "z. B. per WhatsApp", d=1.2, pop=True)
   + ui("Abläufe", "Daten laufen von allein", "Mail, Kalender, CRM", d=1.8, pop=True)
   + ui("Marketing", "Werbung, die Anfragen bringt", "Content & Kampagnen", d=2.4, pop=True) + "</div>"},
- {"html": label("So arbeiten wir") + "<h2>Erst zuhören. <span class='t'>Dann bauen.</span></h2>" + rows([
+ {"html": label("So arbeiten wir") + "<h2>Zuhören. Bauen. <span class='t'>Dranbleiben.</span></h2>" + rows([
    ("Wir schauen uns deine Abläufe an", "bevor wir irgendetwas vorschlagen"),
-   ("Du buchst nur, was du brauchst", "jede Leistung gibt es auch einzeln"),
-   ("Nach dem Start bleiben wir dran", "und passen an, wenn sich etwas ändert")])},
+   ("Wir bauen und testen mit deinem Team", "an echten Fällen aus deinem Alltag"),
+   ("Nach dem Start bleiben wir dran", "wir betreuen dich und passen an, wenn sich etwas ändert")])},
  {"html": "<h1 style='font-size:96px'>Wo verliert dein Betrieb gerade <span class='grad'>Zeit?</span></h1><p>Im Erstgespräch finden wir es gemeinsam heraus. Danach weißt du, wo KI sich lohnt.</p>" + cta()},
 ])
 
